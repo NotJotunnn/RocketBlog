@@ -4,65 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>RocketBlog</title>
+    <title>Rocketblog</title>
 </head>
 <body>
-
     <header>
-        
-        <img src="./images/logo.svg" alt="Logo">
-
+        <div>
+            <img src="./images/logo.svg" alt="logo">
+        </div>
         <ul>
             <li>Home</li>
             <li>Sobre</li>
             <li>Categorias</li>
             <li>Contato</li>
         </ul>
-
-        <div class="field">
-
-            <input type="text" placeholder="Buscar">
-
-            <button>
-
-                <svg>
-
-                    <image href="./images/search.svg"></image>
-                
-                </svg>
-
-            </button>
-
+        <div class="searchfield">
+            <input type="text" id="search" placeholder="Buscar">
+        
+            <button><img src="./images/search.svg" alt="Procurar"></button>
         </div>
-
     </header>
 
-    <main>
+    <section class="hero">
+        <div class="column1">
+            <h1>Veja o guia definitivo para<br>conquistar seus objetivos<br>como DEV em 2022</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat<br>aenean sit vitae, sed tristique placerat hac. </p>
+            <button>Veja mais <img src="./images/arrow-right.svg" alt="Veja mais"></button>
+        </div>
+        <div class="column2">
+        </div>
+    </section>
 
-        <section class="hero">
-
+    <section class="article">
+        <div class="articlebody">
             <div class="column1">
-
-                <h1>
-                    Veja o guia definitivo para conquistar seus objetivos<br>como DEV em 2022
-                </h1>
-                <h2>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat<br>aenean sit vitae, sed tristique placerat hac.
-                </h2>
-                <button>Veja mais <svg><image href="./images/arrow-right.svg"></image></svg></button>
-            
+                <figure>
+                    <img src="./images/post-1.png" alt="Começando no ReactJS em 2022">
+                </figure>
+                <p>Janeiro 04, 2022</p>
+                <h2>Começando no ReactJS em 2022</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet<br>ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in<br>aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed<br> volutpat aenean.</p>
             </div>
 
             <div class="column2">
-
-                <img src="./images/featured-image.png" alt="Imagem hero">
-
+                <div class="post1">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>Conheça as principais técnicas para<br>conseguir uma vaga internacional<br>em programação</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh<br>eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,<br>sed tristique.</p>
+                </div>
+                <hr>
+                <div class="post2">
+                    <p>Janeiro 04, 2022</p>
+                    <h2>Veja a evolução do Front-end na prática</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh<br>eu in aliquet ut adipiscing neque. </p>
+                </div>
             </div>
+        </div>
 
-        </section>
-
-    </main>
-
+        <div class="articlebot">
+            <div class="post3">
+                <img src="./images/post-2.png" alt="10 dicas para conseguir a vaga desejada">
+                <p>Janeiro 04, 2022</p>
+                <h2>10 dicas para conseguir a vaga<br>desejada</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed<br>volutpat aenean sit vitae, sed tristique. </p>
+            </div>
+            <div class="post4">
+                <img src="./images/post-3.png" alt="Deixe seu código mais semântico com essas dicas">
+                <p>Janeiro 04, 2022</p>
+                <h2>Deixe seu código mais semântico<br>com essas dicas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed<br>volutpat aenean sit vitae, sed tristique. </p>
+            </div>
+            <div class="post5">
+                <img src="./images/post-4.png" alt="Use essas dicas nas suas aplicações mobile">
+                <p>Janeiro 04, 2022</p>
+                <h2>Use essas dicas nas suas<br>aplicações mobile</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed<br>volutpat aenean sit vitae, sed tristique. </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
