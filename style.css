@@ -34,6 +34,10 @@ body,html {
     overflow-x: hidden;
 }
 
+.mobile {
+    display: none;
+}
+
 /* I am using the body as of means to color everything on the upper region
 so that i can somewhat have a "shortcut" in the designing of the project */
 body {
@@ -100,6 +104,10 @@ header button {
     background-color: var(--button-bg);
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+header .mobmenu {
+    display: none;
 }
 
 /* Hero, Front of the page */
@@ -230,4 +238,90 @@ header button {
 
 .articlebot h2 {
     margin-bottom: 15px;
+}
+
+/* == Mobile == */
+
+@media only screen and (max-width:850px) {
+
+    .mobile {
+        display: block;
+    }
+
+    /* Header section */
+
+    header ul {
+        position: absolute;
+        bottom: 800%;
+    }
+
+    .searchfield {
+        position: absolute;
+        bottom: 800%;
+    }
+    
+    /* This change together with the one in the main body allows the Menu button to show only on mobiles */
+    header .mobmenu {
+        display: block;
+        background-color: #17002700;
+    }
+
+    header .mobmenu img {
+        width: 25px;
+        height: 25px;
+        filter: invert(100%) sepia(41%) saturate(3113%) hue-rotate(181deg) brightness(107%) contrast(103%);
+    }
+
+    .hero {
+        height: 50vh;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero .column1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin-top: 25px;
+    }
+
+    .hero .column1 h1 {
+        font-size: 170%;
+        line-height: normal;
+    }
+
+    .hero .column1 p {
+        display: none;
+    }
+
+    .hero .column1 button {
+        /* border: 2px solid red; */
+        margin-top: 25px;
+        width: 120px;
+        font-size: 120%;
+        margin-bottom: 120px;
+    }
+
+    .hero .column2 {
+        /* border: 2px solid red; */
+        height: 20vh;
+        border-radius: 20px;
+    }
+
+    /* Article */
+
+    .articlebody {
+        flex-direction: column;
+        border: 2px solid red;
+    }
+
+    .articlebody .column2{
+        margin-left: 0;
+    }
+
+    /* .articlebody p {
+        
+    } */
 }
